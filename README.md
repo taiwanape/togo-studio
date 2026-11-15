@@ -1,11 +1,11 @@
 # ToGo Studio website
 
-Source lives in dist/. Open dist/index.html locally to preview.
+Public website: https://taiwanape.github.io/togo-studio/
+Source repository: https://github.com/taiwanape/togo-studio
 
-GitHub Pages deployment is prepared in .github/workflows/pages.yml.
-It runs manually from Actions after Pages is enabled with GitHub Actions as its source.
-The deploy artifact includes only dist/. Sites metadata and project video files are excluded.
+Source files live in dist/. Open dist/index.html locally to preview.
+GitHub Pages serves the gh-pages branch root. That branch contains only dist/ files.
+The manual Deploy ToGo Studio workflow checks JavaScript, publishes dist/ to gh-pages and requests a Pages build.
+The initial publication used the same commands through the authenticated GitHub CLI. The revised manual workflow has not yet been run.
 
-Current content is a design demonstration. News collection, scheduled updates, editorial publishing and a custom domain remain to be configured.
-
-Reference architecture inspected: taiwanape/auntie-no-mad, GitHub Actions + GitHub Pages + custom domain. Its live-news workflow currently runs manually.
+Current articles are design demonstrations. News collection, scheduled updates and a custom domain remain to be configured.
