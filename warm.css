@@ -6,7 +6,7 @@ main section[id]{scroll-margin-top:75px}.categories>a{white-space:nowrap;padding
 .brand > .brand-caption { font: 700 18px/1.4 "Noto Sans TC", sans-serif; letter-spacing: 1px; }
 .masthead { height: 100px; }
 .channel-banner { display: block; margin-top: 24px; overflow: hidden; border-radius: 14px; background: #090909; }
-.channel-banner img { display: block; width: 100%; aspect-ratio: 6 / 1; object-fit: cover; object-position: center; }
+.channel-banner img { display: block; width: 100%; height: auto; aspect-ratio: 6 / 1; object-fit: cover; object-position: center; }
 .intro { grid-template-columns: 1fr; margin-top: 24px; }
 .intro h1 { font-size: clamp(30px, 4vw, 52px); }
 footer { background: #141414; color: white; }
@@ -16,5 +16,31 @@ footer span, footer p, footer small { color: #c5c5c5; }
   .brand img { width: 64px; height: 64px; }
   .brand > .brand-caption { font-size: 14px; }
   .masthead { height: 82px; }
-  .channel-banner img { aspect-ratio: 3.5 / 1; object-fit: cover; }
+  .channel-banner img { height: auto; aspect-ratio: 3.5 / 1; object-fit: cover; }
+}
+
+/* Keep the approved palette. These rules only fix contrast, focus, and touch size. */
+.skip-link{position:absolute;left:12px;top:0;transform:translateY(-130%);background:#2a2419;color:#fff9e9;padding:10px 14px;z-index:20;border-radius:0 0 12px 12px;font-weight:700;font-size:14px}
+.skip-link:focus{transform:none}
+.brand picture{display:contents}
+.channel-banner picture{display:block}
+.card .meta,.card .card-bottom,.prototype-note{color:var(--muted)}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #2a2419;outline-offset:3px;box-shadow:0 0 0 6px #ffe067}
+.youtube,.actions>a,.video-links a,#search-toggle,#clear-search,.archive-controls .categories button{min-height:44px}
+.youtube,.actions>a,.video-links a,#search-toggle{display:inline-flex;align-items:center;justify-content:center}
+#close-article{width:44px;height:44px;top:8px;right:8px;display:grid;place-items:center}
+dialog{padding-top:58px}
+input{font-size:16px}
+nav .categories{scroll-padding-inline:8px}
+@media(max-width:600px){
+  footer{flex-direction:column;align-items:flex-start;gap:10px}
+  footer p{display:block;margin:0}
+}
+@media(max-width:480px){
+  nav .nav-inner{width:94%}
+  nav .categories{gap:10px}
+}
+@media(max-width:364px){
+  .topline{letter-spacing:0;flex-wrap:wrap;row-gap:2px}
+  nav .categories{flex-wrap:wrap;overflow:visible;row-gap:0}
 }

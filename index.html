@@ -1,12 +1,168 @@
 <!doctype html>
-<html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ToGo Studio 土狗數位媒體：從 AI、晶片到未來交通，讓科技新聞更容易看懂。網站第三版示範。"><meta name="theme-color" content="#fff9e9"><title>ToGo Studio — 科技，值得看懂。</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="warm.css"><link rel="icon" type="image/png" href="assets/togo-avatar.png"></head>
-<body><header><div class="topline"><span>土狗數位媒體 · INDEPENDENT TECH STORIES</span><span>網站概念版 V3 <i></i></span></div><div class="masthead"><a class="brand" href="./" aria-label="ToGo Studio 首頁"><img src="assets/togo-avatar.png" alt="ToGo Studio 土狗數位媒體"><span class="brand-caption">土狗數位媒體<small>影像創作・科技探索</small></span></a><a class="youtube" href="https://www.youtube.com/channel/UCAW_8ImG5aT8mV7wNcT09iA" target="_blank" rel="noopener">前往 YouTube ↗</a></div></header>
-<nav aria-label="網站導覽"><div class="nav-inner"><div class="categories"><a href="#brief">本期必看</a><a href="#radar">科技雷達</a><a href="#practical">生活科技</a><a href="#industry">產業觀察</a><a href="#news">文章庫</a><a href="#videos">影片專區</a></div></div></nav>
-<main><a class="channel-banner" href="https://www.youtube.com/@ToGoStudio" target="_blank" rel="noopener"><img src="assets/togo-banner.png" alt="ToGo Studio 土狗數位媒體，影像創作・科技探索"></a><section class="intro"><div><span class="eyebrow">土狗數位媒體 · 科技白話報</span><h1>科技消息很多，<br><span>先看懂這幾件。</span></h1><p>AI 在忙什麼？機器人真的能幫忙了嗎？<br>ToGo 幫你挑重點，聊聊這些變化跟你有什麼關係。</p><div class="actions"><a href="#brief">看本期必看 ↓</a><a href="#radar">看科技雷達 ↓</a></div></div></section><section class="topic-menu"><h2>你想先看哪一區？</h2><div class="topic-grid"><a href="#brief"><strong>本期必看</strong><span>先讀這期的重點。 ↗</span></a><a href="#radar"><strong>科技雷達</strong><span>最近有哪些技術值得留意？ ↗</span></a><a href="#practical"><strong>生活科技</strong><span>從實際用途看科技能幫上什麼忙。 ↗</span></a><a href="#industry"><strong>產業觀察</strong><span>從晶片到飛行研究，看懂技術背後的問題。 ↗</span></a></div></section><section class="edition" id="brief"><div><h2>本期必看</h2><p>AI 從回答問題走向執行實體任務。機器人如何感知環境、做決定，再把動作做對？</p><button class="story-link" data-id="0">讀本期專題 ↗</button></div><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=85" alt="人工智慧情境示意"></section>
-<section class="desk" id="radar"><h2>科技雷達</h2><p>最近有哪些技術值得留意？</p><div class="desk-grid"></div></section>
-<section class="desk" id="practical"><h2>生活科技</h2><p>從實際用途看科技能幫上什麼忙。</p><div class="desk-grid"></div></section>
-<section class="desk" id="industry"><h2>產業觀察</h2><p>從晶片到飛行研究，看懂技術背後的問題。</p><div class="desk-grid"></div></section>\n<section class="news-section" id="news"><div class="section-heading"><div><span class="eyebrow">想看更多？</span><h2 id="feed-title">文章庫</h2></div><span id="result-count">6 篇示範選題</span></div><div class="archive-controls"><div class="categories" id="categories"></div><button id="search-toggle">搜尋文章</button><div id="search-box" hidden><label for="search">搜尋報導</label><input id="search" type="search" placeholder="試試 AI、晶片、機器人…" autocomplete="off"><button id="clear-search">清除</button></div></div><div class="cards" id="cards"></div><p id="empty" hidden>沒有符合的文章，換個關鍵字試試。</p></section>
-<section class="video-banner" id="videos"><div><h2>ToGo 影片專區</h2><p>從 X-59 超音速研究機開始，看 ToGo Studio 的科技短片。</p><div class="video-links"><a href="https://www.youtube.com/shorts/onTYIbFWFyo" target="_blank" rel="noopener">觀看 X-59 短片 ↗</a><a href="https://www.youtube.com/channel/UCAW_8ImG5aT8mV7wNcT09iA" target="_blank" rel="noopener">瀏覽 YouTube 頻道 ↗</a></div></div></section>
-<div class="prototype-note"><span>關於這一版</span><p>這是 ToGo Studio 網站設計預覽。文章為示範選題與概念稿，不是即時新聞；圖片為情境示意。正式上線前將替換成經查證、附來源的報導。</p></div>
-</main><footer><div><img class="footer-wordmark" src="assets/logo.png" alt="ToGo Studio"><span>土狗數位媒體</span></div><p>保持好奇。看懂改變。</p><small>© 2026 ToGo Studio · 概念版</small></footer>
-<dialog id="article"><button id="close-article" aria-label="關閉文章">✕</button><div id="article-content"></div></dialog><script src="app.js"></script></body></html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ToGo Studio — 科技，值得看懂。</title>
+  <meta name="description" content="ToGo Studio 土狗數位媒體：從 AI、晶片到未來交通，讓科技新聞更容易看懂。網站概念版，文章為示範選題。">
+  <meta name="theme-color" content="#fff9e9">
+  <link rel="canonical" href="https://taiwanape.github.io/togo-studio/">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:site_name" content="ToGo Studio">
+  <meta property="og:title" content="ToGo Studio — 科技，值得看懂。">
+  <meta property="og:description" content="ToGo Studio 土狗數位媒體：從 AI、晶片到未來交通，讓科技新聞更容易看懂。網站概念版，文章為示範選題。">
+  <meta property="og:url" content="https://taiwanape.github.io/togo-studio/">
+  <meta property="og:image" content="https://taiwanape.github.io/togo-studio/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ToGo Studio 土狗數位媒體，影像創作・科技探索">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ToGo Studio — 科技，值得看懂。">
+  <meta name="twitter:description" content="ToGo Studio 土狗數位媒體：從 AI、晶片到未來交通，讓科技新聞更容易看懂。網站概念版，文章為示範選題。">
+  <meta name="twitter:image" content="https://taiwanape.github.io/togo-studio/assets/og.jpg">
+  <link rel="preload" as="image" type="image/avif" fetchpriority="high" imagesrcset="assets/togo-banner-640.avif 640w, assets/togo-banner-960.avif 960w, assets/togo-banner-1280.avif 1280w, assets/togo-banner-1600.avif 1600w" imagesizes="(max-width: 600px) 90vw, (max-width: 1636px) 88vw, 1440px">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="warm.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ToGo Studio",
+    "alternateName": "土狗數位媒體",
+    "url": "https://taiwanape.github.io/togo-studio/",
+    "logo": "https://taiwanape.github.io/togo-studio/assets/togo-avatar.png",
+    "description": "從 AI、晶片到未來交通，讓科技新聞更容易看懂。",
+    "slogan": "科技，值得看懂。",
+    "sameAs": [
+      "https://www.youtube.com/@ToGoStudio",
+      "https://www.youtube.com/channel/UCAW_8ImG5aT8mV7wNcT09iA"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">跳至主要內容</a>
+  <header>
+    <div class="topline"><span>土狗數位媒體 · INDEPENDENT TECH STORIES</span><span>網站概念版 V3 <i></i></span></div>
+    <div class="masthead">
+      <a class="brand" href="./">
+        <picture>
+          <source srcset="assets/togo-avatar.avif" type="image/avif">
+          <source srcset="assets/togo-avatar.webp" type="image/webp">
+          <img src="assets/togo-avatar.png" width="192" height="192" alt="ToGo Studio 土狗數位媒體">
+        </picture>
+        <span class="brand-caption">土狗數位媒體<small>影像創作・科技探索</small></span>
+      </a>
+      <a class="youtube" href="https://www.youtube.com/channel/UCAW_8ImG5aT8mV7wNcT09iA" target="_blank" rel="noopener">前往 YouTube ↗</a>
+    </div>
+  </header>
+  <nav aria-label="網站導覽">
+    <div class="nav-inner">
+      <div class="categories">
+        <a href="#brief">本期必看</a>
+        <a href="#radar">科技雷達</a>
+        <a href="#practical">生活科技</a>
+        <a href="#industry">產業觀察</a>
+        <a href="#news">文章庫</a>
+        <a href="#videos">影片專區</a>
+      </div>
+    </div>
+  </nav>
+  <main id="content" tabindex="-1">
+    <a class="channel-banner" href="https://www.youtube.com/@ToGoStudio" target="_blank" rel="noopener">
+      <picture>
+        <source type="image/avif" srcset="assets/togo-banner-640.avif 640w, assets/togo-banner-960.avif 960w, assets/togo-banner-1280.avif 1280w, assets/togo-banner-1600.avif 1600w" sizes="(max-width: 600px) 90vw, (max-width: 1636px) 88vw, 1440px">
+        <source type="image/webp" srcset="assets/togo-banner-640.webp 640w, assets/togo-banner-960.webp 960w, assets/togo-banner-1280.webp 1280w, assets/togo-banner-1600.webp 1600w" sizes="(max-width: 600px) 90vw, (max-width: 1636px) 88vw, 1440px">
+        <img src="assets/togo-banner-1280.webp" width="1600" height="267" alt="ToGo Studio 土狗數位媒體，影像創作・科技探索" fetchpriority="high">
+      </picture>
+    </a>
+    <section class="intro">
+      <div>
+        <span class="eyebrow">土狗數位媒體 · 科技白話報</span>
+        <h1>科技消息很多，<br><span>先看懂這幾件。</span></h1>
+        <p>AI 在忙什麼？機器人真的能幫忙了嗎？<br>ToGo 幫你挑重點，聊聊這些變化跟你有什麼關係。</p>
+        <div class="actions"><a href="#brief">看本期必看 ↓</a><a href="#radar">看科技雷達 ↓</a></div>
+      </div>
+    </section>
+    <section class="topic-menu">
+      <h2>你想先看哪一區？</h2>
+      <div class="topic-grid">
+        <a href="#brief"><strong>本期必看</strong><span>先讀這期的重點。 ↗</span></a>
+        <a href="#radar"><strong>科技雷達</strong><span>最近有哪些技術值得留意？ ↗</span></a>
+        <a href="#practical"><strong>生活科技</strong><span>從實際用途看科技能幫上什麼忙。 ↗</span></a>
+        <a href="#industry"><strong>產業觀察</strong><span>從晶片到飛行研究，看懂技術背後的問題。 ↗</span></a>
+      </div>
+    </section>
+    <section class="edition" id="brief">
+      <div>
+        <h2>本期必看</h2>
+        <p>AI 從回答問題走向執行實體任務。機器人如何感知環境、做決定，再把動作做對？</p>
+        <button class="story-link" type="button" data-id="0">讀本期專題 ↗</button>
+      </div>
+      <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&amp;fit=crop&amp;w=960&amp;q=75" srcset="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&amp;fit=crop&amp;w=640&amp;q=75 640w, https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&amp;fit=crop&amp;w=960&amp;q=75 960w" sizes="(max-width: 680px) 90vw, 640px" width="960" height="540" alt="人工智慧情境示意" decoding="async">
+    </section>
+    <section class="desk" id="radar">
+      <h2>科技雷達</h2>
+      <p>最近有哪些技術值得留意？</p>
+      <div class="desk-grid"></div>
+    </section>
+    <section class="desk" id="practical">
+      <h2>生活科技</h2>
+      <p>從實際用途看科技能幫上什麼忙。</p>
+      <div class="desk-grid"></div>
+    </section>
+    <section class="desk" id="industry">
+      <h2>產業觀察</h2>
+      <p>從晶片到飛行研究，看懂技術背後的問題。</p>
+      <div class="desk-grid"></div>
+    </section>
+    <section class="news-section" id="news">
+      <div class="section-heading">
+        <div><span class="eyebrow">想看更多？</span><h2 id="feed-title">文章庫</h2></div>
+        <span id="result-count" aria-live="polite">6 篇示範選題</span>
+      </div>
+      <div class="archive-controls">
+        <div class="categories" id="categories"></div>
+        <button id="search-toggle" type="button" aria-expanded="false" aria-controls="search-box">搜尋文章</button>
+        <div id="search-box" role="search" hidden>
+          <label for="search">搜尋報導</label>
+          <input id="search" type="search" placeholder="試試 AI、晶片、機器人…" autocomplete="off">
+          <button id="clear-search" type="button">清除</button>
+        </div>
+      </div>
+      <div class="cards" id="cards"></div>
+      <p id="empty" hidden>沒有符合的文章，換個關鍵字試試。</p>
+    </section>
+    <section class="video-banner" id="videos">
+      <div>
+        <h2>ToGo 影片專區</h2>
+        <p>從 X-59 超音速研究機開始，看 ToGo Studio 的科技短片。</p>
+        <div class="video-links">
+          <a href="https://www.youtube.com/shorts/onTYIbFWFyo" target="_blank" rel="noopener">觀看 X-59 短片 ↗</a>
+          <a href="https://www.youtube.com/channel/UCAW_8ImG5aT8mV7wNcT09iA" target="_blank" rel="noopener">瀏覽 YouTube 頻道 ↗</a>
+        </div>
+      </div>
+    </section>
+    <div class="prototype-note">
+      <span>關於這一版</span>
+      <p>這是 ToGo Studio 網站設計預覽。文章為示範選題與概念稿，不是即時新聞；圖片為情境示意。正式上線前將替換成經查證、附來源的報導。</p>
+    </div>
+  </main>
+  <footer>
+    <div><img class="footer-wordmark" src="assets/logo.png" width="280" height="280" alt="ToGo Studio"><span>土狗數位媒體</span></div>
+    <p>保持好奇。看懂改變。</p>
+    <small>© 2026 ToGo Studio · 概念版</small>
+  </footer>
+  <dialog id="article" aria-labelledby="article-title">
+    <button id="close-article" type="button" aria-label="關閉文章">✕</button>
+    <div id="article-content"></div>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
